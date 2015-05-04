@@ -26,40 +26,45 @@ Code Examples
 
 ### Module Interface
 
-    # import
-    from ende.Data import Encryption, Decryption, SignedEncryption, SignedDecryption
+```python
+# import
+from ende.Data import Encryption, Decryption, SignedEncryption, SignedDecryption
 
-    # Encryption Object
-    enc = Encryption('this is a message', 'password')
+# Encryption Object
+enc = Encryption('this is a message', 'password')
 
-    # Decryption as object
-    dec = Decryption( enc, 'password')
+# Decryption as object
+dec = Decryption( enc, 'password')
 
-    # Decryption as unicode string
-    dec = Decryption( message=en.message(), 'password')
+# Decryption as unicode string
+dec = Decryption( message=en.message(), 'password')
 
-    # Decryption as base64 string
-    dec = Decryption( b64_message=en.b64_message(), 'password')
+# Decryption as base64 string
+dec = Decryption( b64_message=en.b64_message(), 'password')
 
-    # Get plaintext
-    dec.plaintext
+# Get plaintext
+dec.plaintext
+```
 
 ### Command-Line Interface
 
 Encrypt string with password (you should use password file,`-p`, instead)
 
-    machine:user$ python ende -en -s 'this is a message' -k 'insecure-password'
-    Encrypting: this is a message    
-    
-    MjIwMTUtMDItMjJUMTI6NDA6NTEtMDgwMCQkkZcQjy6SiWjPHmoCphqMTL6owrQquX9xw8hxFYkUG0_zNrPu-DJyDMrUCfDg4-NR8kiRMNh4ZvkEc1m90EU=
+```sh
+machine:user$ python ende -en -s 'this is a message' -k 'insecure-password'
+Encrypting: this is a message    
+
+MjIwMTUtMDItMjJUMTI6NDA6NTEtMDgwMCQkkZcQjy6SiWjPHmoCphqMTL6owrQquX9xw8hxFYkUG0_zNrPu-DJyDMrUCfDg4-NR8kiRMNh4ZvkEc1m90EU=
+```
 
 Decrypt string with password
 
-    machine:user$ python ende -de -s 'MjIwMTUtMDItMjJUMTI6NDA6NTEtMDgwMCQkkZcQjy6SiWjPHmoCphqMTL6owrQquX9xw8hxFYkUG0_zNrPu-DJyDMrUCfDg4-NR8kiRMNh4ZvkEc1m90EU=' -k 'insecure-password' 
-    Decrypting: MjIwMTUtMDItMjJUMTI6NDA6NTEtMDgwMCQkkZcQjy6SiWjPHmoCphqMTL6owrQquX9xw8hxFYkUG0_zNrPu-DJyDMrUCfDg4-NR8kiRMNh4ZvkEc1m90EU=
-    
-    this is a message
+```sh
+machine:user$ python ende -de -s 'MjIwMTUtMDItMjJUMTI6NDA6NTEtMDgwMCQkkZcQjy6SiWjPHmoCphqMTL6owrQquX9xw8hxFYkUG0_zNrPu-DJyDMrUCfDg4-NR8kiRMNh4ZvkEc1m90EU=' -k 'insecure-password' 
+Decrypting: MjIwMTUtMDItMjJUMTI6NDA6NTEtMDgwMCQkkZcQjy6SiWjPHmoCphqMTL6owrQquX9xw8hxFYkUG0_zNrPu-DJyDMrUCfDg4-NR8kiRMNh4ZvkEc1m90EU=
 
+this is a message
+```
 
 Installation
 ------------
