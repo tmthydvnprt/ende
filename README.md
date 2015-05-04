@@ -23,37 +23,49 @@ Code Examples
 -------------
 
 ###Module Interface
+
 import
+
     from ende.Data import Encryption, Decryption, SignedEncryption, SignedDecryption
 
 Encryption Object
+
     enc = Encryption('this is a message', 'password')
 
 Decryption as object
+
     dec = Decryption( en, 'password')
 
 Decryption as unicode string
+
     dec = Decryption( message=en.message(), 'password')
 
 Decryption as base64 string
+
     dec = Decryption( b64_message=en.b64_message(), 'password')
 
 Get plaintext
+
     dec.plaintext
 
 ###Command-Line Interface
+
 Encrypt string with password (you should use password file,`-p`, instead)
+
     python ende -en -s 'this is a message' -k 'insecure-password' 
 
 ouput
+
     Encrypting: this is a message
     
     MjIwMTUtMDItMjJUMTI6NDA6NTEtMDgwMCQkkZcQjy6SiWjPHmoCphqMTL6owrQquX9xw8hxFYkUG0_zNrPu-DJyDMrUCfDg4-NR8kiRMNh4ZvkEc1m90EU=
 
 Decrypt string with password
+
     python ende -de -s 'MjIwMTUtMDItMjJUMTI6NDA6NTEtMDgwMCQkkZcQjy6SiWjPHmoCphqMTL6owrQquX9xw8hxFYkUG0_zNrPu-DJyDMrUCfDg4-NR8kiRMNh4ZvkEc1m90EU=' -k 'insecure-password' 
 
 output
+
     Decrypting: MjIwMTUtMDItMjJUMTI6NDA6NTEtMDgwMCQkkZcQjy6SiWjPHmoCphqMTL6owrQquX9xw8hxFYkUG0_zNrPu-DJyDMrUCfDg4-NR8kiRMNh4ZvkEc1m90EU=
     
     this is a message
