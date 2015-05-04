@@ -53,16 +53,14 @@ Get plaintext
 
 Encrypt string with password (you should use password file,`-p`, instead)
 
-    machine:user$ python ende -en -s 'this is a message' -k 'insecure-password' 
-
-    Encrypting: this is a message
+    machine:user$ python ende -en -s 'this is a message' -k 'insecure-password'
+    Encrypting: this is a message    
     
     MjIwMTUtMDItMjJUMTI6NDA6NTEtMDgwMCQkkZcQjy6SiWjPHmoCphqMTL6owrQquX9xw8hxFYkUG0_zNrPu-DJyDMrUCfDg4-NR8kiRMNh4ZvkEc1m90EU=
 
 Decrypt string with password
 
     machine:user$ python ende -de -s 'MjIwMTUtMDItMjJUMTI6NDA6NTEtMDgwMCQkkZcQjy6SiWjPHmoCphqMTL6owrQquX9xw8hxFYkUG0_zNrPu-DJyDMrUCfDg4-NR8kiRMNh4ZvkEc1m90EU=' -k 'insecure-password' 
-
     Decrypting: MjIwMTUtMDItMjJUMTI6NDA6NTEtMDgwMCQkkZcQjy6SiWjPHmoCphqMTL6owrQquX9xw8hxFYkUG0_zNrPu-DJyDMrUCfDg4-NR8kiRMNh4ZvkEc1m90EU=
     
     this is a message
