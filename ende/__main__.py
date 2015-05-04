@@ -1,5 +1,7 @@
+#!/usr/bin/env python
 """
 Ende
+====
 
 Personal (En)cryption (De)cryption package with command-line tool
 
