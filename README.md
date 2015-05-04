@@ -18,6 +18,7 @@ Modules:
 2. `ende.File` - folder level functions
 3. `ende.Util` - ranodm utility functions
 
+> This was built for fun, to learn about encryption, and for a real, hopefully non-trival, use case for learning about structuring python classes.  An attempt was made to make this secure but it was not designed by a professional cyrptographer.
 
 Code Examples
 -------------
@@ -34,7 +35,7 @@ Encryption Object
 
 Decryption as object
 
-    dec = Decryption( en, 'password')
+    dec = Decryption( enc, 'password')
 
 Decryption as unicode string
 
