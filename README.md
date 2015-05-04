@@ -26,28 +26,22 @@ Code Examples
 
 ### Module Interface
 
-import
-
+    # import
     from ende.Data import Encryption, Decryption, SignedEncryption, SignedDecryption
 
-Encryption Object
-
+    # Encryption Object
     enc = Encryption('this is a message', 'password')
 
-Decryption as object
-
+    # Decryption as object
     dec = Decryption( enc, 'password')
 
-Decryption as unicode string
-
+    # Decryption as unicode string
     dec = Decryption( message=en.message(), 'password')
 
-Decryption as base64 string
-
+    # Decryption as base64 string
     dec = Decryption( b64_message=en.b64_message(), 'password')
 
-Get plaintext
-
+    # Get plaintext
     dec.plaintext
 
 ### Command-Line Interface
@@ -127,7 +121,7 @@ TODO
 
 History
 -------
-Ende was originally written with [`pycrypto`](https://www.dlitz.net/software/pycrypto/), it now uses [`cryptography`](https://cryptography.io/)
+Ende was originally written with [`pycrypto`](https://www.dlitz.net/software/pycrypto/), it now uses [`cryptography`](https://cryptography.io/).
 
 
 License
