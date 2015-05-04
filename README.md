@@ -50,7 +50,7 @@ dec.plaintext
 
 Encrypt string with password (you should use password file,`-p`, instead)
 
-```sh
+```ShellSession
 machine:user$ python ende -en -s 'this is a message' -k 'insecure-password'
 Encrypting: this is a message    
 
@@ -59,7 +59,7 @@ MjIwMTUtMDItMjJUMTI6NDA6NTEtMDgwMCQkkZcQjy6SiWjPHmoCphqMTL6owrQquX9xw8hxFYkUG0_z
 
 Decrypt string with password
 
-```sh
+```ShellSession 
 machine:user$ python ende -de -s 'MjIwMTUtMDItMjJUMTI6NDA6NTEtMDgwMCQkkZcQjy6SiWjPHmoCphqMTL6owrQquX9xw8hxFYkUG0_zNrPu-DJyDMrUCfDg4-NR8kiRMNh4ZvkEc1m90EU=' -k 'insecure-password' 
 Decrypting: MjIwMTUtMDItMjJUMTI6NDA6NTEtMDgwMCQkkZcQjy6SiWjPHmoCphqMTL6owrQquX9xw8hxFYkUG0_zNrPu-DJyDMrUCfDg4-NR8kiRMNh4ZvkEc1m90EU=
 
