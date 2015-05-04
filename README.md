@@ -3,7 +3,7 @@ Ende
 
 Description
 -----------
-Personal (En)cryption (De)cryption package and command-line tool
+Personal (En)cryption (De)cryption package with command-line tool
 
 This program provides string, file & whole folder encrytion / decryption.
 It may be used either as a importable package or a command-line tool.
@@ -24,42 +24,39 @@ Code Examples
 
 ###Module Interface
 import
->from ende.Data import Encryption, Decryption, SignedEncryption, SignedDecryption
->
+    from ende.Data import Encryption, Decryption, SignedEncryption, SignedDecryption
 
 Encryption Object
->en = Encryption('this is a message', 'password')
->
+    enc = Encryption('this is a message', 'password')
 
 Decryption as object
->de = Decryption( en, 'password')
+    dec = Decryption( en, 'password')
 
 Decryption as unicode string
->de = Decryption( message=en.message(), 'password')
+    dec = Decryption( message=en.message(), 'password')
 
 Decryption as base64 string
->de = Decryption( b64_message=en.b64_message(), 'password')
+    dec = Decryption( b64_message=en.b64_message(), 'password')
 
 Get plaintext
->de.plaintext
->
+    dec.plaintext
 
 ###Command-Line Interface
 Encrypt string with password (you should use password file,`-p`, instead)
->python ende -en -s 'this is a message' -k 'insecure-password' 
+    python ende -en -s 'this is a message' -k 'insecure-password' 
 
 ouput
->Encrypting: this is a message
->
->MjIwMTUtMDItMjJUMTI6NDA6NTEtMDgwMCQkkZcQjy6SiWjPHmoCphqMTL6owrQquX9xw8hxFYkUG0_zNrPu-DJyDMrUCfDg4-NR8kiRMNh4ZvkEc1m90EU=
+    Encrypting: this is a message
+    
+    MjIwMTUtMDItMjJUMTI6NDA6NTEtMDgwMCQkkZcQjy6SiWjPHmoCphqMTL6owrQquX9xw8hxFYkUG0_zNrPu-DJyDMrUCfDg4-NR8kiRMNh4ZvkEc1m90EU=
 
 Decrypt string with password
->python ende -de -s 'MjIwMTUtMDItMjJUMTI6NDA6NTEtMDgwMCQkkZcQjy6SiWjPHmoCphqMTL6owrQquX9xw8hxFYkUG0_zNrPu-DJyDMrUCfDg4-NR8kiRMNh4ZvkEc1m90EU=' -k 'insecure-password' 
+    python ende -de -s 'MjIwMTUtMDItMjJUMTI6NDA6NTEtMDgwMCQkkZcQjy6SiWjPHmoCphqMTL6owrQquX9xw8hxFYkUG0_zNrPu-DJyDMrUCfDg4-NR8kiRMNh4ZvkEc1m90EU=' -k 'insecure-password' 
 
 output
->Decrypting: MjIwMTUtMDItMjJUMTI6NDA6NTEtMDgwMCQkkZcQjy6SiWjPHmoCphqMTL6owrQquX9xw8hxFYkUG0_zNrPu-DJyDMrUCfDg4-NR8kiRMNh4ZvkEc1m90EU=
->
->this is a message
+    Decrypting: MjIwMTUtMDItMjJUMTI6NDA6NTEtMDgwMCQkkZcQjy6SiWjPHmoCphqMTL6owrQquX9xw8hxFYkUG0_zNrPu-DJyDMrUCfDg4-NR8kiRMNh4ZvkEc1m90EU=
+    
+    this is a message
 
 
 Installation
@@ -85,9 +82,9 @@ TODO
 
 History
 -------
-Ende was originally written with `pycrypto`, it now uses `cryptography`
+Ende was originally written with [`pycrypto`](https://www.dlitz.net/software/pycrypto/), it now uses [`cryptography`](https://cryptography.io/)
 
 
 License
 -------
-[MIT]()
+[MIT](https://github.com/tmthydvnprt/ende/blob/master/LICENSE)
