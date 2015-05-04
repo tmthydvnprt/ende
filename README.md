@@ -23,7 +23,7 @@ Modules:
 Code Examples
 -------------
 
-###Module Interface
+### Module Interface
 
 import
 
@@ -49,7 +49,7 @@ Get plaintext
 
     dec.plaintext
 
-###Command-Line Interface
+### Command-Line Interface
 
 Encrypt string with password (you should use password file,`-p`, instead)
 
@@ -73,8 +73,45 @@ At the moment, none.  Run `python ende -h` for CLI usage or `import ende` from y
 
 API Reference
 -------------
-...TBD...
 
+### Module Interface
+
+TBD
+
+### Command-Line Interface
+
+    usage: ende [-h] (-en | -de) (-i FILE | -s STR | -id DIR) (-p FILE | -k STR)
+                [-o FILE | -od DIR] [-a] [-u] [-v | -q] [--version]
+
+    Personal (En)cryption (De)cryption package with command-line tool
+
+    This program provides string, file & whole folder encrytion / decryption.
+    It may be used either as a importable package or a command-line tool.
+
+    - Encryption uses AES-128 CBC mode
+    - Authentication is signed with a SHA256 HMAC.
+    - Individual encryption and authentication keys are generated from the password via PBKDF2.
+
+    optional arguments:
+      -h, --help                 show this help message and exit
+      -en, --encrypt             perform encryption
+      -de, --decrypt             perform decryption
+      -i FILE, --input FILE      input file, or "-" for stdin
+      -s STR, --instr STR        input string
+      -id DIR, --indir DIR       input directory
+      -p FILE, --pswrdfile FILE  password file, or "-" for stdin
+      -k STR, --pswrd STR        password string (do not EVER use this for
+                                 security)
+      -o FILE, --output FILE     output file, default is stdout
+      -od DIR, --outdir DIR      output directory
+      -a, --authenticate         sign or authenticate message
+      -u, --unicode              input or output is unicode instead of base64
+                                 (default is false)
+      -v, --verbose              show verbose info
+      -q, --quiet                show no info
+      --version                  display the program's version
+
+    > This was built for fun, to learn about encryption, and for a real, hopefully non-trival, use case for learning about structuring python classes.  An attempt was made to make this secure but it was not designed by a professional cyrptographer.
 
 Tests
 -----

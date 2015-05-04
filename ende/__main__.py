@@ -1,11 +1,12 @@
 """
-Personal (en)cryption & (de)cryption
+Personal (En)cryption (De)cryption package with command-line tool
 
 This program provides string, file & whole folder encrytion / decryption.
+It may be used either as a importable package or a command-line tool.
 
-    * Encryption uses AES-128 CBC mode
-    * Authentication is signed with a SHA256 HMAC.
-    * Individual encryption and authentication keys are generated from the password via PBKDF2.
+- Encryption uses AES-128 CBC mode
+- Authentication is signed with a SHA256 HMAC.
+- Individual encryption and authentication keys are generated from the password via PBKDF2.
 
 """
 
@@ -46,7 +47,7 @@ def parse_args(args):
     parser = argparse.ArgumentParser(
         formatter_class=lambda prog: argparse.RawDescriptionHelpFormatter(prog, max_help_position=30),
         description=__doc__,
-        epilog='this was built for fun and to encrypt files I store on public git repos'
+        epilog='> This was built for fun, to learn about encryption, and for a real, hopefully non-trival, use case for learning about structuring python classes.  An attempt was made to make this secure but it was not designed by a professional cyrptographer.'
     )
     direction_group = parser.add_mutually_exclusive_group(required=True)
     direction_group.add_argument(
