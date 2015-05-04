@@ -1,9 +1,10 @@
 Ende
 ====
 
+Personal (En)cryption (De)cryption package with command-line tool
+
 Description
 -----------
-Personal (En)cryption (De)cryption package with command-line tool
 
 This program provides string, file & whole folder encrytion / decryption.
 It may be used either as a importable package or a command-line tool.

@@ -1,4 +1,6 @@
 """
+Ende
+
 Personal (En)cryption (De)cryption package with command-line tool
 
 This program provides string, file & whole folder encrytion / decryption.
