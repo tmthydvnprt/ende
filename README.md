@@ -53,9 +53,7 @@ Get plaintext
 
 Encrypt string with password (you should use password file,`-p`, instead)
 
-    python ende -en -s 'this is a message' -k 'insecure-password' 
-
-ouput
+    machine:user$ python ende -en -s 'this is a message' -k 'insecure-password' 
 
     Encrypting: this is a message
     
@@ -63,9 +61,7 @@ ouput
 
 Decrypt string with password
 
-    python ende -de -s 'MjIwMTUtMDItMjJUMTI6NDA6NTEtMDgwMCQkkZcQjy6SiWjPHmoCphqMTL6owrQquX9xw8hxFYkUG0_zNrPu-DJyDMrUCfDg4-NR8kiRMNh4ZvkEc1m90EU=' -k 'insecure-password' 
-
-output
+    machine:user$ python ende -de -s 'MjIwMTUtMDItMjJUMTI6NDA6NTEtMDgwMCQkkZcQjy6SiWjPHmoCphqMTL6owrQquX9xw8hxFYkUG0_zNrPu-DJyDMrUCfDg4-NR8kiRMNh4ZvkEc1m90EU=' -k 'insecure-password' 
 
     Decrypting: MjIwMTUtMDItMjJUMTI6NDA6NTEtMDgwMCQkkZcQjy6SiWjPHmoCphqMTL6owrQquX9xw8hxFYkUG0_zNrPu-DJyDMrUCfDg4-NR8kiRMNh4ZvkEc1m90EU=
     
