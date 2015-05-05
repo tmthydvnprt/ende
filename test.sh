@@ -3,8 +3,8 @@
 # test project
 nosetests tests/test_data.py -v -d --with-coverage --cover-package=ende,tests --cover-tests --cover-erase --cover-inclusive --cover-branches &> test_data.txt.temp
 
-## test project
-#nosetests tests/test_file.py -v -d --with-coverage --cover-package=ende,tests --cover-tests --cover-erase --cover-inclusive --cover-branches &> test_file.txt.temp
+# test project
+nosetests tests/test_file.py -v -d --with-coverage --cover-package=ende,tests --cover-tests --cover-erase --cover-inclusive --cover-branches &> test_file.txt.temp
 
 # test report
 echo '' > test_report.txt

@@ -169,5 +169,5 @@ class EncryptionDecryptionSignTests(unittest.TestCase):
 
             de_sig = SignedDecryption(signed_message=bad_ciphertext, password=password)
             attempt.append('invalidsignature' == de_sig.dec.plaintext)
-        
+
         self.assertEqual(True, attempt.count(True)/float(len(attempt)) > 0.95 )
