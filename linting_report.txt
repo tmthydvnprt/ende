@@ -1,15 +1,15 @@
 
 Ende Linting Report
-Tue May 5 06:16:15 PDT 2015
+Wed May 6 06:43:13 PDT 2015
 =========================================
 
 ************* Module ende.Data
-I:268, 0: Locally disabling too-many-instance-attributes (R0902) (locally-disabled)
+I:282, 0: Locally disabling too-many-instance-attributes (R0902) (locally-disabled)
 
 
 Report
 ======
-455 statements analysed.
+464 statements analysed.
 
 Statistics by type
 ------------------
@@ -56,13 +56,13 @@ Raw metrics
 +----------+-------+------+---------+-----------+
 |type      |number |%     |previous |difference |
 +==========+=======+======+=========+===========+
-|code      |764    |77.09 |764      |=          |
+|code      |773    |72.31 |773      |=          |
 +----------+-------+------+---------+-----------+
-|docstring |182    |18.37 |182      |=          |
+|docstring |252    |23.57 |252      |=          |
 +----------+-------+------+---------+-----------+
-|comment   |9      |0.91  |9        |=          |
+|comment   |8      |0.75  |8        |=          |
 +----------+-------+------+---------+-----------+
-|empty     |36     |3.63  |36       |=          |
+|empty     |36     |3.37  |36       |=          |
 +----------+-------+------+---------+-----------+
 
 
@@ -114,12 +114,12 @@ Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 
 
 Tests Linting Report
-Tue May 5 06:16:17 PDT 2015
+Wed May 6 06:43:15 PDT 2015
 =========================================
 
 ************* Module tests.test_data
-C:168, 0: Line too long (132/128) (line-too-long)
-C:173, 0: No space allowed before bracket
+C:182, 0: Line too long (132/128) (line-too-long)
+C:187, 0: No space allowed before bracket
         self.assertEqual(True, attempt.count(True)/float(len(attempt)) > 0.95 )
                                                                               ^ (bad-whitespace)
 
@@ -165,13 +165,13 @@ Raw metrics
 +----------+-------+------+---------+-----------+
 |type      |number |%     |previous |difference |
 +==========+=======+======+=========+===========+
-|code      |207    |69.93 |207      |=          |
+|code      |207    |61.24 |207      |=          |
 +----------+-------+------+---------+-----------+
-|docstring |55     |18.58 |55       |=          |
+|docstring |97     |28.70 |97       |=          |
 +----------+-------+------+---------+-----------+
-|comment   |26     |8.78  |26       |=          |
+|comment   |26     |7.69  |26       |=          |
 +----------+-------+------+---------+-----------+
-|empty     |8      |2.70  |8        |=          |
+|empty     |8      |2.37  |8        |=          |
 +----------+-------+------+---------+-----------+
 
 
