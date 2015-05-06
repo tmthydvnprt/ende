@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 """
 Ende
 ====
@@ -11,6 +10,19 @@ It may be used either as a importable package or a command-line tool.
 - Encryption uses AES-128 CBC mode
 - Authentication is signed with a SHA256 HMAC.
 - Individual encryption and authentication keys are generated from the password via PBKDF2.
+
+project    : Ende
+version    : 0.1.0
+status     : development
+modifydate : 2015-05-05 06:14:05 -0700
+createdate : 2015-05-04 06:08:38 -0700
+website    : https://github.com/tmthydvnprt/project
+author     : tmthydvnprt
+email      : tmthydvnprt@users.noreply.github.com
+maintainer : tmthydvnprt
+license    : MIT
+copyright  : Copyright 2015, project
+credits    : 
 
 """
 
