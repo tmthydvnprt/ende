@@ -4,7 +4,7 @@ tests.test_data - nose tests for ende.Data module
 project    : Ende
 version    : 0.1.0
 status     : development
-modifydate : 2015-05-06 19:24:00 -0700
+modifydate : 2015-05-06 19:28:00 -0700
 createdate : 2015-05-05 05:36:00 -0700
 website    : https://github.com/tmthydvnprt/ende
 author     : tmthydvnprt
