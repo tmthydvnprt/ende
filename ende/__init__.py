@@ -24,7 +24,7 @@ Modules:
 project    : Ende
 version    : 0.1.0
 status     : development
-modifydate : 2015-05-06 19:28:00 -0700
+modifydate : 2015-05-06 19:30:00 -0700
 createdate : 2015-05-04 06:08:00 -0700
 website    : https://github.com/tmthydvnprt/ende
 author     : tmthydvnprt
@@ -39,7 +39,7 @@ credits    :
 __all__ = ['Data', 'File', 'Util']
 __version__ = '0.1.0'
 __status__ = 'development'
-__date__ = '2015-05-06 19:28:00 -0700'
+__date__ = '2015-05-06 19:30:00 -0700'
 __website__ = 'https://github.com/tmthydvnprt/ende'
 __author__ = 'tmthydvnprt'
 __email__ = 'tmthydvnprt@users.noreply.github.com'
