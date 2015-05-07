@@ -23,6 +23,7 @@ Modules:
 > and for a real, non-trival, use case for learning about structuring python classes.
 > An attempt was made to make this secure but it was not designed by a professional cyrptographer.
 
+
 Code Examples
 -------------
 
@@ -113,7 +114,8 @@ TBD
       -q, --quiet                show no info
       --version                  display the program's version
 
-    > This was built for fun, to learn about encryption, and for a real, hopefully non-trival, use case for learning about structuring python classes.  An attempt was made to make this secure but it was not designed by a professional cyrptographer.
+    > This was built for fun, to learn about encryption, and for a real, non-trival, use case for learning about structuring python classes.  An attempt was made to make this secure but it was not designed by a professional cyrptographer.
+
 
 Tests
 -----
