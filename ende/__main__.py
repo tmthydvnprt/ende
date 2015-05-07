@@ -22,7 +22,7 @@ email      : tmthydvnprt@users.noreply.github.com
 maintainer : tmthydvnprt
 license    : MIT
 copyright  : Copyright 2015, project
-credits    : 
+credits    :
 
 """
 
