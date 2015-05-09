@@ -21,17 +21,17 @@ Modules:
 > and for a real, non-trival, use case for learning about structuring python classes.
 > An attempt was made to make this secure but it was not designed by a professional cyrptographer.
 
-project    : Ende
+project    : ende
 version    : 0.1.0
 status     : development
-modifydate : 2015-05-06 19:30:00 -0700
+modifydate : 2015-05-09 06:07:00 -0700
 createdate : 2015-05-04 06:08:00 -0700
 website    : https://github.com/tmthydvnprt/ende
 author     : tmthydvnprt
 email      : tmthydvnprt@users.noreply.github.com
 maintainer : tmthydvnprt
 license    : MIT
-copyright  : Copyright 2015, project
+copyright  : Copyright 2015, ende
 credits    :
 
 """
@@ -39,11 +39,11 @@ credits    :
 __all__ = ['Data', 'File', 'Util']
 __version__ = '0.1.0'
 __status__ = 'development'
-__date__ = '2015-05-06 19:30:00 -0700'
+__date__ = '2015-05-09 06:07:00 -0700'
 __website__ = 'https://github.com/tmthydvnprt/ende'
 __author__ = 'tmthydvnprt'
 __email__ = 'tmthydvnprt@users.noreply.github.com'
 __maintainer__ = 'tmthydvnprt'
 __license__ = 'MIT'
-__copyright__ = 'Copyright 2015, project'
+__copyright__ = 'Copyright 2015, ende'
 __credits__ = ''

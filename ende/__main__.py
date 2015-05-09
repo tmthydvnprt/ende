@@ -11,17 +11,17 @@ It may be used either as a importable package or a command-line tool.
 - Authentication is signed with a SHA256 HMAC.
 - Individual encryption and authentication keys are generated from the password via PBKDF2.
 
-project    : Ende
+project    : ende
 version    : 0.1.0
 status     : development
-modifydate : 2015-05-06 19:30:00 -0700
+modifydate : 2015-05-09 06:07:00 -0700
 createdate : 2015-05-04 06:08:00 -0700
 website    : https://github.com/tmthydvnprt/ende
 author     : tmthydvnprt
 email      : tmthydvnprt@users.noreply.github.com
 maintainer : tmthydvnprt
 license    : MIT
-copyright  : Copyright 2015, project
+copyright  : Copyright 2015, ende
 credits    :
 
 """
