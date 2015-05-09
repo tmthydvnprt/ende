@@ -1,53 +1,38 @@
 
 Ende Testing Report
-Wed May 6 06:44:54 PDT 2015
+Sat May 9 06:03:07 PDT 2015
 =========================================
 
-test_data Report
-test one message and one password never encrypt the same ... ok
-test one message and one password always decrypt the same ... ok
-test many random messages and passwords encrypt/decrypt correctly ... ok
-test many random messages and passwords with bad passwords ... ok
-test many random messages and passwords with bad sent messages ... ok
-test one message and one password never encrypt the same ... ok
-test one message and one password always decrypt the same ... ok
-test many random messages and passwords encrypt/decrypt correctly ... ok
-test many random messages/passwords with bad passwords ... ok
-test signing a message with salt is good ... ok
-test signing a message without salt is bad ... ok
+Test Report
+test ende.File: directory compare passes ... ok
+test ende.File: directory compare fails ... ok
+test ende.File: one directory and one password never encrypt the same ... ok
+test ende.File: one directory and one password always decrypt the same ... ok
+test ende.File: many directory and random passwords encrypt/decrypt correctly ... ok
+test ende.File: many directory with bad passwords ... ok
+test ende.Data: one message and one password never encrypt the same ... ok
+test ende.Data: one message and one password always decrypt the same ... ok
+test ende.Data: many random messages and passwords encrypt/decrypt correctly ... ok
+test ende.Data: many random messages and passwords with bad passwords ... ok
+test ende.Data: many random messages and passwords with bad sent messages ... ok
+test ende.Data: one message and one password never encrypt the same ... ok
+test ende.Data: one message and one password always decrypt the same ... ok
+test ende.Data: many random messages and passwords encrypt/decrypt correctly ... ok
+test ende.Data: many random messages/passwords with bad passwords ... ok
+test ende.Data: signing a message with salt is good ... ok
+test ende.Data: signing a message without salt is bad ... ok
 
-Name              Stmts   Miss Branch BrMiss  Cover   Missing
--------------------------------------------------------------
-ende                 11      0      0      0   100%   
-ende.Data           259     67     74     36    69%   192, 200, 213, 237, 249-251, 259, 264, 278, 292, 324, 340, 354, 378, 389-391, 396-405, 414, 418, 436, 447, 478, 490-492, 500, 505, 518, 523-530, 535-538, 549, 554, 569, 587, 610, 615-634, 643, 646-650, 655-659, 680, 699, 724-725, 730-731, 736-755
-ende.Util            27      7      2      2    69%   59, 64-66, 71-73
-tests                 1      0      0      0   100%   
-tests.test_data      99      0     24      0   100%   
--------------------------------------------------------------
-TOTAL               397     74    100     38    77%   
+Name         Stmts   Miss Branch BrMiss  Cover   Missing
+--------------------------------------------------------
+ende            11      0      0      0   100%   
+ende.Data      259     60     74     33    72%   192, 200, 213, 237, 249-251, 259, 264, 278, 292, 324, 340, 354, 378, 389-391, 396-405, 414, 436, 447, 478, 490-492, 500, 505, 523-530, 535-538, 549, 554, 569, 587, 615-634, 643, 649-650, 655-659, 680, 699, 730-731, 736-755
+ende.File       47      1     18      1    97%   30
+ende.Util       27      4      2      2    79%   59, 64-66
+tests            1      0      0      0   100%   
+tests.test     194      2     54      3    98%   82, 90
+--------------------------------------------------------
+TOTAL          539     67    148     39    85%   
 ----------------------------------------------------------------------
-Ran 11 tests in 72.882s
-
-OK
-test_file Report
-test directory compare passes ... ok
-test directory compare fails ... ok
-test one directory and one password never encrypt the same ... ok
-test one directory and one password always decrypt the same ... ok
-test many directory and random passwords encrypt/decrypt correctly ... ok
-test many directory with bad passwords ... ok
-
-Name              Stmts   Miss Branch BrMiss  Cover   Missing
--------------------------------------------------------------
-ende                 11      0      0      0   100%   
-ende.Data           259     76     74     37    66%   192, 200, 213, 237, 249-251, 259, 264, 269-278, 288, 292, 324, 329-335, 340, 354, 378, 389-391, 396-405, 414, 416, 436, 447, 463, 478, 490-492, 500, 505, 523-530, 535-538, 549, 554, 569, 587, 605, 615-634, 643, 645, 649-650, 655-659, 680, 699, 718-719, 730-731, 736-755
-ende.File            47      1     18      1    97%   30
-ende.Util            27      4      2      2    79%   59, 64-66
-tests                 1      0      0      0   100%   
-tests.test_file     100      2     30      3    96%   79, 87
--------------------------------------------------------------
-TOTAL               445     83    124     43    78%   
-----------------------------------------------------------------------
-Ran 6 tests in 23.289s
+Ran 17 tests in 96.276s
 
 OK

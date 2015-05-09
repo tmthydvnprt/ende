@@ -1,6 +1,6 @@
 
 Ende Linting Report
-Wed May 6 06:43:13 PDT 2015
+Sat May 9 06:01:27 PDT 2015
 =========================================
 
 ************* Module ende.Data
@@ -114,19 +114,14 @@ Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 
 
 Tests Linting Report
-Wed May 6 06:43:15 PDT 2015
+Sat May 9 06:01:29 PDT 2015
 =========================================
 
-************* Module tests.test_data
-C:182, 0: Line too long (132/128) (line-too-long)
-C:187, 0: No space allowed before bracket
-        self.assertEqual(True, attempt.count(True)/float(len(attempt)) > 0.95 )
-                                                                              ^ (bad-whitespace)
 
 
 Report
 ======
-201 statements analysed.
+196 statements analysed.
 
 Statistics by type
 ------------------
@@ -134,7 +129,7 @@ Statistics by type
 +---------+-------+-----------+-----------+------------+---------+
 |type     |number |old number |difference |%documented |%badname |
 +=========+=======+===========+===========+============+=========+
-|module   |3      |3          |=          |100.00      |0.00     |
+|module   |2      |2          |=          |100.00      |0.00     |
 +---------+-------+-----------+-----------+------------+---------+
 |class    |4      |4          |=          |100.00      |0.00     |
 +---------+-------+-----------+-----------+------------+---------+
@@ -150,12 +145,12 @@ External dependencies
 ::
 
     Crypto 
-      \-Random (tests.test_data)
+      \-Random (tests.test)
     ende 
-      \-Data (tests.test_data)
-      \-File (tests.test_file)
-      \-Util (tests.test_file)
-    numpy (tests.test_data,tests.test_file)
+      \-Data (tests.test)
+      \-File (tests.test)
+      \-Util (tests.test)
+    numpy (tests.test)
 
 
 
@@ -165,13 +160,13 @@ Raw metrics
 +----------+-------+------+---------+-----------+
 |type      |number |%     |previous |difference |
 +==========+=======+======+=========+===========+
-|code      |207    |61.24 |207      |=          |
+|code      |203    |64.44 |203      |=          |
 +----------+-------+------+---------+-----------+
-|docstring |97     |28.70 |97       |=          |
+|docstring |80     |25.40 |80       |=          |
 +----------+-------+------+---------+-----------+
-|comment   |26     |7.69  |26       |=          |
+|comment   |22     |6.98  |22       |=          |
 +----------+-------+------+---------+-----------+
-|empty     |8      |2.37  |8        |=          |
+|empty     |10     |3.17  |10       |=          |
 +----------+-------+------+---------+-----------+
 
 
@@ -195,7 +190,7 @@ Messages by category
 +-----------+-------+---------+-----------+
 |type       |number |previous |difference |
 +===========+=======+=========+===========+
-|convention |2      |2        |=          |
+|convention |0      |0        |=          |
 +-----------+-------+---------+-----------+
 |refactor   |0      |0        |=          |
 +-----------+-------+---------+-----------+
@@ -206,31 +201,7 @@ Messages by category
 
 
 
-% errors / warnings by module
------------------------------
-
-+----------------+------+--------+---------+-----------+
-|module          |error |warning |refactor |convention |
-+================+======+========+=========+===========+
-|tests.test_data |0.00  |0.00    |0.00     |100.00     |
-+----------------+------+--------+---------+-----------+
-
-
-
-Messages
---------
-
-+---------------+------------+
-|message id     |occurrences |
-+===============+============+
-|line-too-long  |1           |
-+---------------+------------+
-|bad-whitespace |1           |
-+---------------+------------+
-
-
-
 Global evaluation
 -----------------
-Your code has been rated at 9.90/10 (previous run: 9.90/10, +0.00)
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 

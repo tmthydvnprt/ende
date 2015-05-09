@@ -16,4 +16,4 @@ credits    :
 
 """
 
-__all__ = ['test_data', 'test_file']
+__all__ = ['test']
