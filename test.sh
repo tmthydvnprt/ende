@@ -6,7 +6,7 @@ nosetests tests/test.py -v -d --with-coverage --cover-package=ende,tests --cover
 # test report
 echo '' > test_report.txt
 echo 'Ende Testing Report' >> test_report.txt
-echo `date` >> test_report.txt
+echo `date "+%Y-%m-%d %H:%M:%S %z"` >> test_report.txt
 echo '=========================================' >> test_report.txt
 echo '' >> test_report.txt
 echo 'Test Report' >> test_report.txt
