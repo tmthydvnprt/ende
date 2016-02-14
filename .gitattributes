@@ -1,0 +1,2 @@
+# detect markdown correctly
+*.md linguist-language=Markdown
