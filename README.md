@@ -20,7 +20,7 @@ Modules:
 2. `ende.File` - folder level functions
 3. `ende.Util` - ranodm utility functions
 
-> This was built for fun, to learn about encryption, 
+> This was built for fun, to learn about encryption,
 > and for a real, non-trival, use case for learning about structuring python classes.
 > An attempt was made to make this secure but it was **not** designed by a professional cyrptographer.
 
@@ -38,13 +38,13 @@ from ende.Data import Encryption, Decryption, SignedEncryption, SignedDecryption
 enc = Encryption('this is a message', 'password')
 
 # Decryption as object
-dec = Decryption( enc, 'password')
+dec = Decryption(enc, 'password')
 
 # Decryption as unicode string
-dec = Decryption( message=en.message(), 'password')
+dec = Decryption(message=en.message(), 'password')
 
 # Decryption as base64 string
-dec = Decryption( b64_message=en.b64_message(), 'password')
+dec = Decryption(b64_message=en.b64_message(), 'password')
 
 # Get plaintext
 dec.plaintext
@@ -63,8 +63,8 @@ MjIwMTUtMDItMjJUMTI6NDA6NTEtMDgwMCQkkZcQjy6SiWjPHmoCphqMTL6owrQquX9xw8hxFYkUG0_z
 
 Decrypt string with password
 
-```ShellSession 
-machine:user$ python ende -de -s 'MjIwMTUtMDItMjJUMTI6NDA6NTEtMDgwMCQkkZcQjy6SiWjPHmoCphqMTL6owrQquX9xw8hxFYkUG0_zNrPu-DJyDMrUCfDg4-NR8kiRMNh4ZvkEc1m90EU=' -k 'insecure-password' 
+```ShellSession
+machine:user$ python ende -de -s 'MjIwMTUtMDItMjJUMTI6NDA6NTEtMDgwMCQkkZcQjy6SiWjPHmoCphqMTL6owrQquX9xw8hxFYkUG0_zNrPu-DJyDMrUCfDg4-NR8kiRMNh4ZvkEc1m90EU=' -k 'insecure-password'
 Decrypting: MjIwMTUtMDItMjJUMTI6NDA6NTEtMDgwMCQkkZcQjy6SiWjPHmoCphqMTL6owrQquX9xw8hxFYkUG0_zNrPu-DJyDMrUCfDg4-NR8kiRMNh4ZvkEc1m90EU=
 
 this is a message
@@ -116,7 +116,7 @@ TBD
       -q, --quiet                show no info
       --version                  display the program's version
 
-    > This was built for fun, to learn about encryption, 
+    > This was built for fun, to learn about encryption,
     > and for a real, non-trival, use case for learning about structuring python classes.
     > An attempt was made to make this secure but it was not designed by a professional cyrptographer.
 
