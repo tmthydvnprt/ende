@@ -41,10 +41,10 @@ enc = Encryption('this is a message', 'password')
 dec = Decryption(enc, 'password')
 
 # Decryption as unicode string
-dec = Decryption(message=en.message(), 'password')
+dec = Decryption(message=enc.message(), 'password')
 
 # Decryption as base64 string
-dec = Decryption(b64_message=en.b64_message(), 'password')
+dec = Decryption(b64_message=enc.b64_message(), 'password')
 
 # Get plaintext
 dec.plaintext
